@@ -1,0 +1,27 @@
+.dropdown {
+	height: 100px;
+	width: 300px;
+    position: static;
+    display: inline-block;
+	border: solid white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+	border: solid black;
+    background-color: #f9f9f9;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0px 0px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropbtn {
+	height: 100px;
+	width: 300px;
+	font-size:30;
+}

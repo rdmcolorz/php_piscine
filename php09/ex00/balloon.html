@@ -1,0 +1,41 @@
+<html>
+<head>
+	<style>
+		#balloon {
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			}
+	</style>
+</head>
+<body>
+<script>
+	$(document).ready(function() {
+		blow_big();
+	});
+	function blow_big() {
+		el = document.getElementById('balloon');
+		var height = el.offsetHeight;
+		var width = el.offsetWidth;
+		var newheight = height + 20;
+		var newwidth = width + 20;
+		if (el.style.background == 0)
+			el.style.background = 'red');
+		else if (el.style.background == 'red')
+			el.style.background = 'green';
+		else if (el.style.background == 'green')
+			el.style.background = 'blue';
+		else if (el.style.background == 'blue')
+			el.style.background = 'red';
+		if (newheight > 420) {
+			newheight = 200;
+			newwidth = 200;
+		}
+		el.style.height = newheight + 'px';
+		el.style.width = newwidth + 'px';
+	}
+</script>
+<div id="balloon" onclick="blow_big()"></div>
+</body>
+</html>
+

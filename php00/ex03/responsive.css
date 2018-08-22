@@ -1,0 +1,18 @@
+#image {width: 1500px;}
+table {
+	padding: 10px;
+}
+td {
+	border: 0px;
+	border-spacing: 10px;
+	height: 70px;
+	width: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 10; padding: 0;
+	text-align: center;
+	font-size: 1.5vw;
+}
+h1 {
+	font-size: 1.5vw;
+}
